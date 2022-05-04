@@ -35,7 +35,13 @@ const changeIncrease = (e) => {
   <div class="adder">
     <h2>合計：{{sum}}</h2>
     <p>増加量：<input type="number" :value="increase" @input="changeIncrease"/></p>
-    <button @click="add">足す</button>
-    <button @click="reset">リセット</button>
+    <div class="buttons">
+      <button @click="add">足す</button>
+      <button @click="reset">リセット</button>
+    </div>
   </div>
 </template>
+
+<style>
+@import './css/Adder.css';
+</style>
